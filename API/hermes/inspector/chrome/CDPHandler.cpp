@@ -756,7 +756,7 @@ double CDPHandlerImpl::currentTimestampMs() {
 
 void CDPHandlerImpl::handle(const m::UnknownRequest &req) {
   sendErrorCodeToClient(
-      req.id, m::ErrorCode::MethodNotFound, req.method + " wasn't found");
+      req.id, m::ErrorCode::MethodNotFound, req.method + " wasn't found. but the location of this error was!!");
 }
 
 void CDPHandlerImpl::handle(const m::debugger::DisableRequest &req) {
